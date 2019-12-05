@@ -1,0 +1,79 @@
+import random
+import time
+i=0
+count=0
+start=time.time()
+#MULTIPLICATION
+# while i<20:
+#   a=random.randint(1,10)
+#   b=random.randint(1,10)
+#   print(str(a)+"×"+ str(b)+"= ?")
+#   x=int(input())
+#   if x==a*b:
+#     print("Correct!")
+#     count+=1
+#   else:
+#     print("Incorrect")
+#   i+=1
+#   now=time.time()
+#   if now-start>360:
+#     print("Time's Up")
+#     break
+# DIVISION
+# while i<20:
+#   a=random.randint(1,10)
+#   b=random.randint(1,10)
+#   c=a*b
+#   print(str(c)+"÷"+ str(a)+"= ?")
+#   x=int(input())
+#   if x==b:
+#     print("Correct!")
+#     count+=1
+#   else:
+#     print("Incorrect")
+#   i+=1
+#   now=time.time()
+#   if now-start>360:
+#     print("Time's Up")
+#     break
+# ADDITION
+# while i<20:
+#   a=random.randint(1,10)
+#   b=random.randint(1,10)
+#   print(str(a)+"+"+ str(b)+"= ?")
+#   x=int(input())
+#   if x==a+b:
+#     print("Correct!")
+#     count+=1
+#   else:
+#     print("Incorrect")
+#   i+=1
+#   now=time.time()
+#   if now-start>360:
+#     print("Time's Up")
+#     break
+# SUBTRACTION
+while i<20:
+  a=random.randint(1,10)
+  b=random.randint(1,10)
+  c=a+b
+  print(str(c)+"-"+ str(a)+"= ?")
+  x=int(input())
+  if x==b:
+    print("Correct!")
+    count+=1
+  else:
+    print("Incorrect")
+  i+=1
+  now=time.time()
+  if now-start>360:
+    print("Time's Up")
+    break
+print(str(count)+"/20")
+stop=time.time()
+if count==20:
+   print("Perfection!")
+if int((stop-start)%60)>10: 
+  print("Time= "+str(int((stop-start)//60))+":"+str(int((stop-start)%60)))
+else: 
+  print("Time= "+str(int((stop-start)//60))+":0"+str(int((stop-start)%60)))
